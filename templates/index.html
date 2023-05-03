@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Word Finder</title>
+
+    <style>
+        .buttons-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 200px;
+        }
+    
+        .buttons-container button {
+          flex: 1;
+        }
+      </style>
+    
+</head>
+<body>
+    <div id="app">
+        <h1>Word Finder</h1>
+        <form id="search-form">
+            <label for="guess">What letters are in the word:</label>
+            <input type="text" id="guess" name="guess" required>
+            <br>
+            <label for="not_in">What letters are NOT in the word:</label>
+            <input type="text" id="not_in" name="not_in" required>
+            <br>
+            <h3>Spots:</h3>
+            <label for="spot1">Spot 1:</label>
+            <input type="text" id="spot1" name="spot1">
+            <br>
+            <label for="spot2">Spot 2:</label>
+            <input type="text" id="spot2" name="spot2">
+            <br>
+            <label for="spot3">Spot 3:</label>
+            <input type="text" id="spot3" name="spot3">
+            <br>
+            <label for="spot4">Spot 4:</label>
+            <input type="text" id="spot4" name="spot4">
+            <br>
+            <label for="spot5">Spot 5:</label>
+            <input type="text" id="spot5" name="spot5">
+            <br>
+
+            <h3>Not in Spots:</h3>
+            <label for="not_in_spot1">Not in Spot 1:</label>
+            <input type="text" id="not_in_spot1" name="not_in_spot1">
+            <br>
+            <label for="not_in_spot2">Not in Spot 2:</label>
+            <input type="text" id="not_in_spot2" name="not_in_spot2">
+            <br>
+            <label for="not_in_spot3">Not in Spot 3:</label>
+            <input type="text" id="not_in_spot3" name="not_in_spot3">
+            <br>
+            <label for="not_in_spot4">Not in Spot 4:</label>
+            <input type="text" id="not_in_spot4" name="not_in_spot4">
+            <br>
+            <label for="not_in_spot5">Not in Spot 5:</label>
+            <input type="text" id="not_in_spot5" name="not_in_spot5">
+            <br>
+            <div class="buttons-container">
+                <button type="submit">Find Words</button>
+                <button type="button" id="clear-button">Clear</button>
+            </div>
+
+        </form>
+        <h2>Results:</h2>
+        <ul id="results"></ul>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
